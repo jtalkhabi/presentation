@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>ثبت نام و پذیرش</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding dir="rtl">
+  <button ion-button full large (click)="goToTextView(0)">فرآیند ثبت نام و پذیرش</button>
+  <button ion-button full large (click)="goToTextView(1)">جدول زمانبندی پذیرش</button>
+  <button ion-button full large (click)="goToTextView(2)">منابع آزمون</button>
+  <button ion-button full large (click)="goToTextView(3)">کاربرگ ثبت نام</button>
+  <button ion-button full large onclick="window.open('http://register.whc.ir/epayment/InitiallizeTransaction.aspx', '_system', 'location=yes'); return false;">خرید کارت</button>
+  <button ion-button full large onclick="window.open('http://register.whc.ir/register2/', '_system', 'location=yes'); return false;">ثبت نام سطح 2</button>
+  <button ion-button full large onclick="window.open('http://register.whc.ir/register3/', '_system', 'location=yes'); return false;">ثبت نام سطح 3</button>
+  <button ion-button full large onclick="window.open('http://register.whc.ir/register4/', '_system', 'location=yes'); return false;">ثبت نام سطح 4</button>
+</ion-content>

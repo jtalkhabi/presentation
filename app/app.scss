@@ -1,0 +1,114 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: B_Yekab;
+    src: url('../assets/font/B Yekan.ttf');
+}
+
+@font-face {
+    font-family: B_Lotus;
+    src: url('../assets/font/B Lotus.ttf');
+}
+
+@font-face {
+    font-family: B_Mitra;
+    src: url('../assets/font/B Mitra.ttf');
+}
+
+@font-face {
+    font-family: B_Nazanin;
+    src: url('../assets/font/B Nazanin.ttf');
+}
+
+@font-face {
+    font-family: B_Nazanin_Bold;
+    src: url('../assets/font/B Nazanin Bold.ttf');
+}
+
+
+ion-card-content,ion-content{
+    font-family: B_Nazanin;
+}
+
+ion-header{
+    font-family: B_Nazanin_Bold;  
+}
+
+button[ion-item]{
+    font-family: B_Nazanin_Bold;
+}
+
+.platform-android{
+    ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    }
+}
+
+// RTL ALERT
+
+/*.alert-radio-group {
+  .button-inner {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+}
+
+.alert-button-group {
+  flex-direction: row-reverse;
+}
+
+ion-select {
+  max-width: 100%;
+}
+
+.alert-ios .alert-radio-inner {
+  position: absolute;
+  top: -7px;
+  left: 7px;
+  width: 6px;
+  height: 12px;
+  border-width: 2px;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-style: solid;
+  border-color: color($colors, secondary);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.alert-md .alert-radio-inner {
+  top: 3px;
+  left: 3px;
+}
+
+.select-ios .select-icon .select-icon-inner, .select-md .select-icon .select-icon-inner, .select-wp .select-icon .select-icon-inner {
+  color: color($colors,secondary);
+}
+
+.select-ios .select-icon , .select-md .select-icon, .select-wp .select-icon {
+  position: absolute;
+  left: 10px;
+}
+*/
+

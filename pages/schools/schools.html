@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>مدارس {{navParams.data._Name}}</ion-title>
+  </ion-navbar>  
+</ion-header>
+
+
+<ion-content dir="rtl">
+  <ion-list inset>    
+    <button ion-item *ngFor="let school of schools"  text-wrap item-left detail-none (click)="itemSelected(school)">
+      <ion-icon name="arrow-back" item-right></ion-icon>
+      {{ school._Name }}
+  </button>
+  </ion-list>
+</ion-content>

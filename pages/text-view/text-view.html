@@ -1,0 +1,33 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{navParams.data.title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding dir="rtl" [class]="display_mode">
+  <!-- Real floating action button, fixed. It will not scroll with the content 
+  <ion-fab top right edge>
+    <button ion-fab mini><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list>
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>-->
+
+  <p [style.font-size]="font_size" [style.font-family]="font_family">{{navParams.data.text}}</p>
+
+  <ion-fab left bottom>
+    <button ion-fab color="danger"><ion-icon name="arrow-dropright"></ion-icon></button>
+    <ion-fab-list side="right">
+      <button ion-fab color="primary"><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab [color]="display_mode" (click)="changeDisplay()"><ion-icon name="sunny"></ion-icon></button>
+      <button ion-fab color="info" (click)="showFontSize()"><ion-icon name="color-palette"></ion-icon></button>
+      <button ion-fab color="secondary" (click)="showFontFamily()"><ion-icon name="resize"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

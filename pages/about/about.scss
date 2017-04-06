@@ -1,0 +1,33 @@
+page-about {
+
+    ion-card-header{
+        background: $primary;
+        color: $none !important;
+        font-family: B_Yekab;
+        font-size: 50px;
+    }
+
+    ion-card-content{
+        margin-top: 8px;
+        font-family: B_Mitra;
+        font-size: 17px !important;
+        h2{
+            text-align: center;
+            font-family: B_Yekab;
+        }
+    }
+
+    .padding-none{
+        background: $info;
+    } 
+
+    ion-row{
+        text-align: center;
+        border-bottom: 1px solid $dark;
+    }
+
+    .bk-color{
+        background:primary;
+    }
+
+}

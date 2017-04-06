@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>معرفی حوزه خواهران</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding dir="rtl">
+  <button ion-button full large round (click)="goToPresentation()">آشنایی با حوزه خواهران</button>
+  <button ion-button full large round (click)="goToLevel2()">سطح 2 (کارشناسی)</button>
+  <button ion-button full large round (click)="goToLevel3()">سطح 3 (کارشناسی ارشد)</button>
+  <button ion-button full large round (click)="goToLevel4()">سطح 4 (دکتری)</button>
+  <button ion-button full large round (click)="goToRegister()">ثبت نام و پذیرش</button>
+  <button ion-button full large round (click)="goToSchools()">مدارس</button>
+</ion-content>
+
+<ion-footer align-title="center">
+  <ion-toolbar>
+    <button ion-button outline full onclick="window.open('http://www.whc.ir', '_system', 'location=yes'); return false;">www.whc.ir</button>
+  </ion-toolbar>
+</ion-footer>

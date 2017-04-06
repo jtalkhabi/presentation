@@ -1,0 +1,112 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{navParams.data._Name}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding dir="rtl">
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="people"></ion-icon> ظرفیت
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row align-items-center>
+          <ion-col>
+            حضوری
+          </ion-col>
+          <ion-col>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  روزانه
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  خوابگاهی
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  35
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  -
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+        <ion-row align-items-center class="padding-none">
+          <ion-col>
+            نیمه حضوری
+          </ion-col>
+          <ion-col>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  روزانه
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  خوابگاهی
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+          <ion-col>
+            <ion-grid>
+              <ion-row>
+                <ion-col>
+                  -
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  35
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+        </ion-row>
+        <ion-row align-items-center>
+          <ion-col>
+            پاره وقت روزانه
+          </ion-col>
+          <ion-col>
+            60
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-icon name="desktop"></ion-icon> اطلاعات بیشتر
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button outline block (click)="showMajors()">رشته ها</button>
+        </ion-col>
+        <ion-col col-6>
+          <button ion-button (click)="showConfirm()" outline block>اطلاعات تماس</button>
+          <!--<a ion-button href="tel:+123-456-789" >Call me 1 </a>-->
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

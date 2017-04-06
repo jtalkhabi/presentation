@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>مدارس</ion-title>
+  </ion-navbar>
+  <ion-toolbar primary>
+    <ion-title>لیست استان ها</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content dir="rtl">
+  <ion-list inset>
+    <button ion-item *ngFor="let province of provinces" text-wrap item-left detail-none (click)="itemSelected(province)">
+      <ion-icon name="arrow-back" item-right></ion-icon>
+    {{ province._Name }}
+  </button>
+  </ion-list>
+</ion-content>

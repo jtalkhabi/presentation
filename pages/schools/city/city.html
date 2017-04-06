@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button end menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>مدارس استان {{navParams.data._Name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content dir="rtl">
+  <ion-list inset>
+    <button ion-item *ngFor="let city of cities" text-wrap item-left detail-none [hidden]="city.Schools.length == 0" (click)="itemSelected(city)">
+      <ion-icon name="arrow-back" item-right></ion-icon>
+      {{ city._Name }}
+  </button>
+  </ion-list>
+</ion-content>
